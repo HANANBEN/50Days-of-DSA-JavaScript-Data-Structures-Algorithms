@@ -48,3 +48,11 @@ function testRecursion(n){
 
 
 testRecursion(5);
+
+/**
+ * the goal is :
+ * When you write a recursive function, you don’t need to mentally unroll all the recursive calls step by step.
+     Instead, you trust (take a leap of faith) that the recursive call will do its job correctly for the smaller input.
+ * 
+ * 
+ */
