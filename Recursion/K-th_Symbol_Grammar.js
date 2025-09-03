@@ -69,4 +69,24 @@
 
 function KthSymbolGrammer(n , k) {
            
+    if (n==1) return 0; 
+    var l = Math.pow(2, n-1); // here we calculated the lenght of 0's and 1's in my row 
+    // then based on that we will figure out if k is before or after half of the lenght of each row 
+    //l / 2 is the mid 
+
+
+    if (k <= l / 2)
+         
+        return KthSymbolGrammer(n-1  , k); 
+    else
+        return 1 - KthSymbolGrammer(n-1  , k-l) ; 
 }
+
+console.log(KthSymbolGrammer(3 , 4)); 
+
+
+/*
+ * This problem highlights the importance of making key observations. 
+ * By identifying the repetitive pattern, we can define a recurrence 
+ * that naturally reduces the problem until reaching the base case.
+ */
