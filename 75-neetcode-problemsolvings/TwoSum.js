@@ -37,7 +37,12 @@ console.log(TwoSum([4,5,1,7,8,9999] , 10000));
 
 
 
-/*usinghashmaps*/
+/*usinghashmaps
+ time = O(N)
+  memory = O(N)
+
+
+*/
 function TwoSumHasmap(nums, target)
 
 {
