@@ -50,9 +50,25 @@ let set = new Set();
 }
 
 
+function containsDuplicate2(nums)
+
+{
+let i=0;
+let set = new Set();
+    for(i=0 ;i<nums.length; i++){
+        if(set.has(nums[i]))
+            return true 
+    set.add(nums[i])
+            
+    }
+   return false
+
+}
+
 
 console.log(containsDuplicate([2,1,4,5,5]));
 
+console.log(containsDuplicate2([2,1,4,8]));
 
 
 /*This is a solution where we use some extra space in memory because of the `Set`, but the time complexity is around **O(n)**.
@@ -64,3 +80,4 @@ There are other ways to solve this:
 
 2. **By sorting the array first:**
    Time complexity: **O(n log n)**
+*/
